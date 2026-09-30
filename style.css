@@ -1,0 +1,18 @@
+* {
+  padding: none;
+  margin: none;
+  text-decoration: none;
+}
+
+header {
+  justify-content: center;
+  text-align: center;
+}
+header .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+header .nav-links a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

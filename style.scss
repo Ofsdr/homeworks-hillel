@@ -1,0 +1,21 @@
+* {
+  padding: none;
+  margin: none;
+  text-decoration: none;
+}
+header {
+  justify-content: center;
+  text-align: center;
+  .nav-links {
+  
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  a {
+  text-decoration: none;
+  }
+  
+}
+  
+}
+
