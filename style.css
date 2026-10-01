@@ -15,4 +15,10 @@ header .nav-links {
 }
 header .nav-links a {
   text-decoration: none;
+}
+
+.projects .list {
+  display: flex;
+  list-style: none;
+  gap: 24px;
 }/*# sourceMappingURL=style.css.map */

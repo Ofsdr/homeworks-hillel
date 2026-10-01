@@ -1,3 +1,5 @@
+
+
 * {
   padding: none;
   margin: none;
@@ -16,6 +18,15 @@ header {
   }
   
 }
-  
+
+
+
+}
+.projects {
+  .list {
+    display: flex;
+  list-style: none;
+  gap: 24px;
+  }
 }
 
