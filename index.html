@@ -3,82 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design and Layout</title>
   <link rel="stylesheet" href="style.css">
-  <title>HomeWork 9.1</title>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <ul class="nav-links">
-        <li><a href="" class="active">HOME</a></li>
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">WORKS</a></li>
-        <li><a href="">PROCESS</a></li>
-        <li><a href="">CONTACTS</a></li>
-      </ul>
+  <header class="hero" id="home">
+    <div class="container">
+      <nav class="nav-links" aria-label="Main nav-links">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#works">Works</a>
+        <a class="nav-link" href="#process">Process</a>
+        <a class="nav-link" href="#contacts">Contacts</a>
+      </nav>
+      <div class="intro">
+        <h1>Design and Layout</h1>
+        <p class="description intro-text">Lorem Ipsum is a placeholder text commonly used in printing and web design. Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.</p>
+        <a class="button" >Write to me</a>
+      </div>
     </div>
   </header>
-  <div class="container">
-    <section class="desANDlay">
-      <h1>Design and Layout</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, molestiae natus excepturi architecto cum, autem voluptate ex atque in ipsa sapiente praesentium voluptas blanditiis. Iusto consequatur eaque cumque porro est?</p>
-      <button class="btn">WRITE TO ME</button>
+  <main>
+    <section class="about" id="about" >
+      <div class="container"><h2 id="about-title">About Me</h2><p class="description section-description">Lorem Ipsum is a placeholder text commonly used in printing and web design. Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.</p></div>
     </section>
-    <section class="litAbout">
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius adipisci tempora saepe itaque. Ex, quidem itaque optio ab vel pariatur doloremque delectus earum deleniti ipsam. Corporis voluptatem vitae sapiente.</p>
+    <section class="projects" id="works" aria-label="Completed projects">
+      <div class="container"><ul class="project-list"><li class="project"><img src="./photos/project.png" alt="" width="50" height="50"><div><strong>40+</strong><span>projects</span></div></li>
+<li class="project"><img src="./photos/project.png" alt="" width="50" height="50"><div><strong>40+</strong><span>projects</span></div></li>
+<li class="project"><img src="./photos/project.png" alt="" width="50" height="50"><div><strong>40+</strong><span>projects</span></div></li>
+<li class="project"><img src="./photos/project.png" alt="" width="50" height="50"><div><strong>40+</strong><span>projects</span></div></li>
+<li class="project"><img src="./photos/project.png" alt="" width="50" height="50"><div><strong>40+</strong><span>projects</span></div></li>
+<li class="project"><img src="./photos/project.png" alt="" width="50" height="50"><div><strong>40+</strong><span>projects</span></div></li></ul></div>
     </section>
-    <section class="projects">
-      <ul class="list">
-        <li class="item">
-          <img src="./photos/project.png" alt="">
-          <div>
-            <strong>40+</strong>
-            <span>Projects</span>
-          </div>
-        </li>
-        <li class="item">
-          <img src="./photos/project.png" alt="">
-          <div>
-            <strong>40+</strong>
-            <span>Projects</span>
-          </div>
-        </li>
-        <li class="item">
-          <img src="./photos/project.png" alt="">
-          <div>
-            <strong>40+</strong>
-            <span>Projects</span>
-          </div>
-        </li>
-        <li class="item">
-          <img src="./photos/project.png" alt="">
-          <div>
-            <strong>40+</strong>
-            <span>Projects</span>
-          </div>
-        </li>
-        <li class="item">
-          <img src="./photos/project.png" alt="">
-          <div>
-            <strong>40+</strong>
-            <span>Projects</span>
-          </div>
-        </li>
-        <li class="item">
-          <img src="./photos/project.png" alt="">
-          <div>
-            <strong>40+</strong>
-            <span>Projects</span>
-          </div>
-        </li>
-      </ul>
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <h2 id="process-title">How I Work</h2>
+        <p class="description section-description">Lorem Ipsum is a placeholder text commonly used in printing and web design. Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.</p>
+        <figure class="work-image"><img src="assets/work.jpg" alt="Programming code with a play symbol — video preview" width="1110" height="602"></figure>
+      </div>
     </section>
-    <section class="howIwork">
-      <h2>How I Work</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis repellat eaque reprehenderit doloribus quam optio ad eveniet harum, iusto quae laborum numquam dolores est voluptatum labore adipisci aliquid veritatis.</p>
-      <div class="video"></div>
-    </section>
-  </div>
+  </main>
+  <footer class="footer" id="contacts"><div class="container"><p class="footer-name">Ostap Ivanenko</p><p class="copyright">© 2019. All rights reserved.</p></div></footer>
 </body>
 </html>
