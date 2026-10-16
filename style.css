@@ -205,15 +205,27 @@ h2 {
   text-align: center;
 }
 
+.bg-image-box {
+  background-image: url(./photos/7cecf9b2aa89d7246db40c5549f821b838c3d622\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  height: 600px;
+  width: 1100px;
+}
+
 .work-image {
   margin: 50px 0 0;
   position: relative;
+  display: inline-block;
 }
-.work-image img {
-  display: block;
-}
-.work-image .play {
-  z-index: 1;
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +237,7 @@ h2 {
   background: white;
   cursor: pointer;
 }
-.work-image .play span {
+.play span {
   width: 0;
   height: 0;
   margin-left: 5px;

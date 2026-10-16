@@ -2,6 +2,7 @@ $blue: #34547a;
 $background: #eeeff1;
 $text-color: #727272;
 @use "media";
+@use "mixin";
 * {
    padding: none;
    margin: none;
@@ -158,22 +159,35 @@ h2 {
   background-color: $background;
   text-align: center;
 }
+.bg-image-box {
+  background-image: url(./photos/7cecf9b2aa89d7246db40c5549f821b838c3d622\ \(1\).jpg);
+  background-size: cover;
+  background-position: center ;
+  display: grid;
+  place-items: center;
 
+  height: 600px;
+  width: 1100px;
+}
 .work-image {
+  
   margin: 50px 0 0;
   position: relative;
+  
+  display: inline-block;
+  
 
-  img {
-    display: block;
-    
+  
     
   }
     .play {
-    z-index: 1;
+      @include mixin.position-list ;
+    
     
     
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -194,7 +208,7 @@ h2 {
       border-left: 24px solid black;
     }
   }
-}
+
 
 .footer {
   padding: 50px 0;
