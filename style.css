@@ -1,9 +1,67 @@
-* {
-  box-sizing: border-box;
+@media (max-width: 900px) {
+  .project-list {
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  .project {
+    width: calc((100% - 70px) / 3);
+  }
 }
-
-html {
-  scroll-behavior: smooth;
+@media (max-width: 600px) {
+  .hero {
+    min-height: auto;
+    padding-top: 30px;
+  }
+  .nav-links {
+    gap: 15px 22px;
+  }
+  .nav-links a {
+    font-size: 12px;
+  }
+  .intro {
+    padding: 75px 0 80px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .intro-text {
+    margin-top: 28px;
+  }
+  .button {
+    margin-top: 32px;
+  }
+  .about, .process {
+    padding: 65px 0;
+  }
+  .section-description {
+    margin-top: 28px;
+  }
+  .projects {
+    padding: 55px 0;
+  }
+  .project {
+    width: calc((100% - 35px) / 2);
+    gap: 12px;
+  }
+  .work-image {
+    margin-top: 35px;
+  }
+  .footer {
+    padding: 35px 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+* {
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -149,11 +207,31 @@ h2 {
 
 .work-image {
   margin: 50px 0 0;
+  position: relative;
 }
 .work-image img {
   display: block;
-  width: 100%;
-  height: auto;
+}
+.work-image .play {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+.work-image .play span {
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 24px solid black;
 }
 
 .footer {
@@ -171,65 +249,4 @@ h2 {
   margin-top: 16px;
   font-size: 13px;
   line-height: 21px;
-}
-
-@media (max-width: 900px) {
-  .project-list {
-    flex-wrap: wrap;
-    gap: 35px;
-  }
-  .project {
-    width: calc((100% - 70px) / 3);
-  }
-}
-@media (max-width: 600px) {
-  .hero {
-    min-height: auto;
-    padding-top: 30px;
-  }
-  .nav-links {
-    gap: 15px 22px;
-  }
-  .nav-links a {
-    font-size: 12px;
-  }
-  .intro {
-    padding: 75px 0 80px;
-  }
-  h1 {
-    font-size: 36px;
-  }
-  h2 {
-    font-size: 28px;
-  }
-  .intro-text {
-    margin-top: 28px;
-  }
-  .button {
-    margin-top: 32px;
-  }
-  .about, .process {
-    padding: 65px 0;
-  }
-  .section-description {
-    margin-top: 28px;
-  }
-  .projects {
-    padding: 55px 0;
-  }
-  .project {
-    width: calc((100% - 35px) / 2);
-    gap: 12px;
-  }
-  .work-image {
-    margin-top: 35px;
-  }
-  .footer {
-    padding: 35px 0;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
 }/*# sourceMappingURL=style.css.map */
