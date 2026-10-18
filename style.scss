@@ -160,14 +160,17 @@ h2 {
   text-align: center;
 }
 .bg-image-box {
-  background-image: url(./photos/7cecf9b2aa89d7246db40c5549f821b838c3d622\ \(1\).jpg);
+  
   background-size: cover;
   background-position: center ;
-  display: grid;
+  
   place-items: center;
 
-  height: 600px;
+
   width: 1100px;
+  
+  max-width: 100%;
+  height: auto;
 }
 .work-image {
   
