@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  color: #9aabca;
+  background-color: #f1f5f9;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 32px;
+  font-size: 32px;
+}
+
+.shapes {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #afa7a7;
+  border-radius: 20px;
+}
+
+.shape {
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
+}
+
+.square {
+  fill: #b2cef0;
+  stroke: #063ac7;
+}
+
+.rectangle {
+  fill: #baeccb;
+  stroke: #15803d;
+}
+
+.circle {
+  fill: #fecdd3;
+  stroke: #be123c;
+  animation: change-colors 4s ease-in-out infinite;
+}
+
+.ellipse {
+  fill: #e9d5ff;
+  stroke: #7e22ce;
+}
+
+@keyframes change-colors {
+  0%,
+  100% {
+    fill: #fecdd3;
+    stroke: #be123c;
+  }
+
+  50% {
+    fill: #3a3625;
+    stroke: #5e2c06;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .circle {
+    animation: none;
+  }
+}
